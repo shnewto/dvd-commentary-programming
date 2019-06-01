@@ -1,6 +1,9 @@
 module Lib
     ( someFunc
-    ) where
+    )
+where
+
+import           Git.Commit
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
