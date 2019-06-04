@@ -1,4 +1,4 @@
-module Lib
+module DVDCP
     ( someFunc
     )
 where
