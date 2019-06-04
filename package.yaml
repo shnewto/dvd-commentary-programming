@@ -21,11 +21,9 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
-- gitlib
-- tagged 
-- time
-- text
-- gitlib-libgit2
+- git 
+- bytestring
+- bytedump
 
 library:
   source-dirs: src

@@ -3,12 +3,25 @@ module Lib
     )
 where
 
-import           Git
-import           Git.Libgit2
-import           Control.Monad.IO.Class
-import           Data.Tagged
-import           Data.Time
-import qualified Data.Text                     as T
+import qualified Data.ByteString.Lazy          as L
+import qualified Data.ByteString               as B
+
+import           Control.Applicative
+import           Control.Monad
+
+import           Data.Git.Storage.Object
+import           Data.Git.Storage.Loose
+import           Data.Git.Storage
+import           Data.Git.Ref
+import           Data.Git.Types
+import           Data.Git.Repository
+import           Data.Git.Monad
+
+import           Data.Maybe
+
+import           Text.Bytedump
+import           System.Exit
+
 
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
